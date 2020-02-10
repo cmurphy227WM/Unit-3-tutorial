@@ -39,7 +39,7 @@ function test(){
     //end is the bottom left corner in a 2d array
     //light grid is a 1000 x 1000 array of off light blubs
 
-    for(var i =0; i < instructions.length; i++){
+    for(var i = 0; i < instructions.length; i++){
         if(instructions[i] === "on"){
             var xS = start[i][0];
             var yS = start[i][0];
@@ -56,7 +56,7 @@ function test(){
             xS = tempS;
             xE = tempL;
 
-            temps = Math.min(yS, yE);
+            tempS = Math.min(yS, yE);
             tempL = Math.max(yS, yE);
 
             yS = tempS;
@@ -84,7 +84,7 @@ function test(){
             xS = tempS;
             xE = tempL;
 
-            temps = Math.min(yS, yE);
+            tempS = Math.min(yS, yE);
             tempL = Math.max(yS, yE);
 
             yS = tempS;
